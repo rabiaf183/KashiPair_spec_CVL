@@ -1,8 +1,4 @@
-/**
- This example is based on a cirtical bug found by Certora Prover in KashiPair while on development.
- The bug can cause a loss of system's assets during liquidation.
- More information is in the verification report https://www.certora.com/pubs/KashiLendingMar2021.pdf and in this talk https://www.youtube.com/watch?v=VGSsPIsbb6U 
-***/
+// SPDX-License-Identifier: agpl-3.0
 pragma solidity ^0.8.0;
 
 interface IERC20 {
