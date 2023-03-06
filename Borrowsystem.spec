@@ -1,7 +1,4 @@
-/*
- * This is a specification file to formally verify BorrowSystem.sol
- * smart contract using the Certora Prover. For more information,
- * visit: https://www.certora.com/
+
  *
  * To run, use ./runBorrowSystemBroken.sh or ./runBorrowSystemFixed.sh
  */
