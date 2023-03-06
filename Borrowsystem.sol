@@ -66,6 +66,7 @@ contract BorrowSystemBroken {
 	 */ 
 	function liquidate(address user, address to) public {
 		require(!_isSolvent(user), "user is solvent");
+		require(msg.sender != address(this));
 
 		uint256 borrow = userBorrowAmount[user];
 		uint256 collateral = userCollateralAmount[user];
