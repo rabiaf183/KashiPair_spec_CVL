@@ -37,8 +37,8 @@ contract BorrowSystemBroken {
 	
 	/* Borrow amount and provide collateral */
 	function borrow(uint256 borrowAmount, uint256 collateralAmount) public {
-		userBorrowAmount[msg.sender] = borrowAmount;
-		userCollateralAmount[msg.sender] = collateralAmount;
+		userBorrowAmount[msg.sender] += borrowAmount;
+		userCollateralAmount[msg.sender] += collateralAmount;
 
 		require(_isSolvent(msg.sender), "user is not solvent");
 
